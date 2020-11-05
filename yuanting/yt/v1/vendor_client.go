@@ -23,7 +23,7 @@ import (
 	"net/url"
 
 	gax "github.com/googleapis/gax-go/v2"
-	ytpb "github.com/yuantingapis/go-genproto/yuanting/yt"
+	ytpb "github.com/yuantingapis/go-genproto/yuanting/yt/v1"
 	"google.golang.org/api/option"
 	"google.golang.org/api/option/internaloption"
 	gtransport "google.golang.org/api/transport/grpc"

@@ -20,7 +20,7 @@ import (
 	"context"
 
 	yt "github.com/yuantingapis/go-client/yuanting/yt/v1"
-	ytpb "github.com/yuantingapis/go-genproto/yuanting/yt"
+	ytpb "github.com/yuantingapis/go-genproto/yuanting/yt/v1"
 )
 
 func ExampleNewVendorClient() {
@@ -34,7 +34,7 @@ func ExampleNewVendorClient() {
 }
 
 func ExampleVendorClient_GetVendor() {
-	// import ytpb "github.com/yuantingapis/go-genproto/yuanting/yt"
+	// import ytpb "github.com/yuantingapis/go-genproto/yuanting/yt/v1"
 
 	ctx := context.Background()
 	c, err := yt.NewVendorClient(ctx)
