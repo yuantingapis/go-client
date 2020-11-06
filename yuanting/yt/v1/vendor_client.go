@@ -40,8 +40,8 @@ type VendorCallOptions struct {
 
 func defaultVendorClientOptions() []option.ClientOption {
 	return []option.ClientOption{
-		internaloption.WithDefaultEndpoint("yt.yuantingapis.ltd:443"),
-		internaloption.WithDefaultMTLSEndpoint("yt.yuantingapis.ltd:443"),
+		internaloption.WithDefaultEndpoint("localhost:50051"),
+		internaloption.WithDefaultMTLSEndpoint("localhost:50051"),
 		option.WithGRPCDialOption(grpc.WithDisableServiceConfig()),
 		option.WithScopes(DefaultAuthScopes()...),
 		option.WithGRPCDialOption(grpc.WithDefaultCallOptions(
